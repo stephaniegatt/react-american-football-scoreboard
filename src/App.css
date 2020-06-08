@@ -1,12 +1,12 @@
 :root {
   --black: #0d0d0d;
-  --red: #ff2d2b;
+  --red: #dda15e;
 }
 
 .scoreboard {
-  width: 58%;
+  width: 70%;
   margin: 2rem auto;
-  background-color: #0b5402;
+  background-color: #606c38;
   color: white;
   border-radius: 0.5rem;
   padding: 5rem;
@@ -30,6 +30,7 @@
   border: 3px solid white;
   border-radius: 0.5rem;
   width: 15rem;
+  margin: 2rem;
 }
 
 .home {
@@ -49,6 +50,7 @@
   text-transform: uppercase;
   font-size: 3rem;
   padding: 2rem;
+  text-align: center;
 }
 
 .home__score,
@@ -74,7 +76,7 @@
 
 .bottomRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   place-items: center;
   height: 20rem;
 }
@@ -87,6 +89,7 @@
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
+  margin-top: 2rem;
 }
 
 .down__value,
@@ -99,14 +102,14 @@
   width: 7rem;
   text-align: center;
   background-color: var(--black);
-  margin-top: 1rem;
+  margin: 2rem;
   border-radius: 4px;
   padding: 1.6rem;
   border: 1px solid white;
 }
 
 .buttons {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
