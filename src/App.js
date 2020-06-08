@@ -2,10 +2,9 @@
 import React, { useState } from "react";
 import BottomRow from "./BottomRow";
 import "./App.css";
-import { Home } from "./stretch";
-import { HomePoints } from "./stretch";
-import { Away } from "./stretch";
-import { AwayPoints } from "./stretch";
+import { TeamScore, TeamButtons } from "./stretch";
+
+
 
 function App(props) {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -35,15 +34,15 @@ function App(props) {
     <div className="container">
       <section className="scoreboard">
         <div className="topRow">
-          <Home name={homeName} score={homeScore} />
+          <TeamScore name={homeName} score={homeScore} />
           <div className="timer">00:03</div>
-          <Away name={awayName} score={awayScore} />
+          <TeamScore name={awayName} score={awayScore} isAway />
         </div>
         <BottomRow />
       </section>
       <section className="buttons">
-        <HomePoints touchdown={homeTouchdown} fieldGoal={homeFieldGoal} />
-        <AwayPoints touchdown={awayTouchdown} fieldGoal={awayFieldGoal} />
+        <TeamButtons touchdown={homeTouchdown} fieldGoal={homeFieldGoal} />
+        <TeamButtons touchdown={awayTouchdown} fieldGoal={awayFieldGoal} isAway />
       </section>
     </div>
   );
